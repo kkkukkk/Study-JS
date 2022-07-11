@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <header id="header">
+        헤더
+    </header>
+    <h1>1번</h1>
+    <h1>2번</h1>
+    <h1>3번</h1>
+    <h1>4번</h1>
+    <h1>5번</h1>
+    <h1>6번</h1>
+    <h1>7번</h1>
+    <h1>8번</h1>
+    <h1>9번</h1>
+    <h1>10번</h1>
+    <h1>11번</h1>
+    <h1>12번</h1>
+    <h1>13번</h1>
+    <h1>14번</h1>
+    <h1>15번</h1>
+    <h1>16번</h1>
+    <h1>17번</h1>
+    <h1>18번</h1>
+    <h1>19번</h1>
+    <h1>20번</h1>
+    <a id="go-top" href="#header">맨위로</a>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    document.getElementById("go-top").addEventListener("click", function(e){
+        e.preventDefault();
+        $( 'html, body' ).animate( { scrollTop : 0 }, 1000 );
+    });
+</script>
+</html>
